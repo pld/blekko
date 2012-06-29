@@ -44,7 +44,7 @@ class Blekko
     # p=page
     # ps=num results
 
-    params = "#{CGI.escape(query)}+/json&auth=#{@api_key}&ps=#{@num_results}"
+    params = "#{CGI.escape(query)}+/json+/ps=#{@num_results}&auth=#{@api_key}"
 
     url = "#{@api_protocol}#{API_PATH}#{params}&p=#{page}"
 

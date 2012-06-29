@@ -33,7 +33,7 @@ class BlekkoTest < Test::Unit::TestCase
   end
 
   def test_set_start
-    assert_equal false, @obj.search('helicoid', 10).empty?
+    assert_equal false, @obj.search('helicoid', 2).empty?
   end
 
   def test_return_empty_if_not_results
