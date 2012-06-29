@@ -42,7 +42,7 @@ class BlekkoTest < Test::Unit::TestCase
   end
 
   # benchmark
-  def test_benchmark_no_asserts
+  def benchmark_no_asserts
     Benchmark.bm(4) do |x|
       (10..100).step(10) do |max|
         @obj.num_results = max

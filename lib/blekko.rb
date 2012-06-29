@@ -6,7 +6,7 @@ require 'open-uri'
 
 
 BlekkoResult = Struct.new :title, :abstract, :url, :display_url, :short_host,
-    :short_host_url, :rss, :main_slashtag_boosted
+    :short_host_url, :rss, :main_slashtag_boosted, :date
 
 
 class Blekko 
@@ -67,7 +67,8 @@ class Blekko
           result['short_host'],
           result['short_host_url'],
           result['rss'],
-          result['main_slashtag_boosted']
+          result['main_slashtag_boosted'],
+          Time.now
         )
       end
     end
